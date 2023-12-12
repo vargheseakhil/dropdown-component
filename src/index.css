@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Poppins', sans-serif;
+}
+
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 16px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 4px rgba(24, 25, 27, 0.3), 0px 1px 6px rgba(24, 25, 27, 0.15);
+  border: 1px solid #CACBCE;
+  height: 20px;
+  border-radius: 12px;
+  width: 300px;
+  padding: 16px;
+}
+
+.movie-title {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+
+.dropdown-options {
+  border: 1px solid #CACBCE;
+  border-radius: 12px;
+  box-shadow: 0px 0px 4px rgba(24, 25, 27, 0.3), 0px 1px 6px rgba(24, 25, 27, 0.15);
+  max-height: 100vh; /* Set preferred maximum height */
+  overflow-y: auto; /* To make it vertically scrollable */
+}
+
+.option {
+  height: 30px;
+  padding: 8px 16px;
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+
+.option:hover {
+  background-color: #F2F2F3;
+}
+
+.input-container-focus {
+  box-shadow: 0px 0px 4px rgba(24, 25, 27, 0.3), 0px 1px 6px rgba(24, 25, 27, 0.15);
+  border: 1px solid #00ABFA;
+}
+
+.close-logo{
+  cursor: pointer;
+}
+
+.toggle-logo {
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+}
+
+.toggle-logo.open {
+  transform: rotate(180deg);
+}
+
+.option.selected {
+  color: #00ABFA;
+}
